@@ -14,7 +14,7 @@ var attempts = 0;
    boundary2 = createSprite(190,260,420,3);
    //Crea al sprite del personaje y dale color
    sam = createSprite(20,190,13,13);
-   sam.shapeColor = "green";
+   sam.shapeColor = "red";
    
    //Crea los carros que funcionarán como obstáculos y pintalos de rojo
    car1 = createSprite(100,130,10,10);
@@ -38,9 +38,9 @@ function draw() {
    background("white");
   text("Intentos: " + attempts,200,100);
   strokeWeight(0);
-  fill("lightblue");
+  fill("black");
   rect(0,120,52,140);
-  fill("yellow");
+  fill("gray");
   rect(345,120,52,140);
   
 // Crea la función bounceoff para hacer que el auto rebote en los límites.
